@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,24 @@
     <title>Shorten it</title>
 </head>
 <body>
-    <main class="block mx-auto my-16 w-[50%] ">
-        <input id="input-aira" type="text" placeholder="Type here" class="input input-bordered input-success w-full max-w-xs" />
-        <button id="input-button" class="btn btn-outline">Button</button>
+    <header>
+        <h1 class="text-center italic font-bold text-4xl my-10"> API use kore code Short </h1>
+    </header>
+    <main class="block mx-auto my-28 w-[50%] ">
+        <input id="input-aira" type="text" placeholder="Type url"
+            class="input input-bordered input-success w-full max-w-xs" />
+        <button id="input-button" class="btn btn-outline">Shorten it</button>
+        <!-- model -->
+        <section>
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <div class="modal">
+                <div class="modal-box relative">
+                    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <input id="input-copy" type="text" placeholder="Type here" class="input input-bordered input-error w-full max-w-xs" />
+                    <button id="copy-btn" class="btn btn-outline">Copy</button>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="index.js"></script>
 </body>
